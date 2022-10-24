@@ -1,0 +1,8 @@
+british national corpus:: http://www.natcorp.ox.ac.uk/corpus/index.xml
+* https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/2554
+
+----
+BNC Consortium, 2007, 
+British National Corpus, XML edition, Oxford Text Archive, 
+http://hdl.handle.net/20.500.12024/2554.
+----

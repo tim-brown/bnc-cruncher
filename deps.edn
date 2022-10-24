@@ -1,0 +1,43 @@
+{
+ :paths [:clj-paths :resource-paths]
+
+ :deps {
+        ; com.github.kyleburton/clj-xpath {:mvn/version "1.4.12"}
+        }
+
+ :aliases
+ {
+
+  :clj-paths ["src/main"]
+  :resource-paths ["resources"]
+
+  :build-raw-word-list {
+                    :exec-fn net.timb.bnc.core/build-raw-word-list
+                    :exec-args {
+                                :limit 20
+                                :out-file "raw-word-list.txt"
+                                }
+                    }
+
+  #_:convert-to-edn #_{
+                    :exec-fn net.timb.bnc.core/convert-to-edn
+                    :exec-args {
+                                :limit 20
+                                :out-dir "bnc/edn"
+                                }
+                    }
+
+  :process-raw-word-list {
+                    :exec-fn net.timb.bnc.core/process-raw-word-list
+                    :exec-args {
+                                :limit 20
+                                :out-file "word-list.txt"
+                                }
+                    }
+
+  :nREPL
+  {:extra-deps
+   {
+    nrepl/nrepl {:mvn/version "1.0.0"}
+    cider/piggieback {:mvn/version "0.4.2"}
+    }}}}
